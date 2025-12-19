@@ -101,6 +101,41 @@ input {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Login - Como usar button */
+.button-how-to-use {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+.how-to-use {
+    cursor: pointer;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    background: linear-gradient(to right, white, rgb(176, 176, 176));
+    box-shadow: 2px 2px 6px #c5c5c5, -2px -2px 6px #ffffff;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.how-to-use:hover {
+    background: linear-gradient(to right, white, rgb(121, 121, 121));
+    transform: translateY(-1px);
+}
+
+@media(max-width: 768px) {
+    .how-to-use {
+        padding: 8px 14px;
+        font-size: 0.95rem;
+    }
+    .button-how-to-use {
+        right: 14px;
+        bottom: 14px;
+    }
+}
+
 @media(max-width: 768px) {
     .login {
         flex-direction: column;
@@ -876,6 +911,52 @@ h1 {
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+}
+
+/* How To Use */
+.howto-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+}
+
+.howto-block {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.howto-block h2 {
+    margin-top: 0;
+}
+
+.howto-block ol, .howto-block ul {
+    margin-left: 20px;
+}
+
+.box-button-back-howto {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.button-back-howto {
+    cursor: pointer;
+    background: linear-gradient(to right, white, rgb(176, 176, 176));
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 100px;
+    transition: background 0.3s;
+}
+
+.button-back-howto:hover {
+    background: linear-gradient(to right, white, rgb(121, 121, 121));
 }
 
 /* Manage Users */

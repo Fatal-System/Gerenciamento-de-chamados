@@ -86,6 +86,7 @@ const Login = () => {
       <figure>
         <img src={logo} alt="logo Fatal-System" className='logo-login' />
       </figure>
+      
       <section className="box-login">
         <h1 className='text-login'>Login</h1>
         <div className='form'>
@@ -121,6 +122,16 @@ const Login = () => {
           <button className='forget-password' onClick={textForgetPassword}>
             Esqueceu a senha?
           </button>
+
+          <div className='button-how-to-use'>
+            <button
+              className='how-to-use'
+              type='button'
+              onClick={() => navigate('/how-to-use')}
+            >
+              Como usar
+            </button>
+          </div>
 
           <div className='button-enter'>
             <button

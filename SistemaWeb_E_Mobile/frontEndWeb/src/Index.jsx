@@ -16,12 +16,14 @@ import TecHome from './pages/TecHome';
 import PriorityTicket from "./pages/PriorityTicket";
 import ReplyTicket from "./pages/ReplyTicket";
 import Report from "./pages/Report";
+import HowToUse from "./pages/HowToUse";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/how-to-use" element={<HowToUse />} />
         <Route element={<Layout />}>
           <Route path="/home" element={<Home />} />
           <Route path="/user-configuration" element={<UserConfig />} />
